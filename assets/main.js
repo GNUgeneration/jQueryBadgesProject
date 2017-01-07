@@ -25,7 +25,7 @@ $(function() {
 		src: course.badge
             }).appendTo($course);
 	    
-	    $('<div></div>', {
+	    $('<a></a>', {
 		'class': 'btn btn-primary',
 		target: '_blank',
 		href: course.url,
