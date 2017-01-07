@@ -1,11 +1,12 @@
 $(function() {
 
-    $.ajax('https://www.codeschool.com/users/GNUgeneration.json', function() {
-	dataType: 'jsonp',
-	success: function(response) {
-	    addCourses(response.courses.completed);
-	}
-    });
+   $.ajax({
+    url: 'https://www.codeschool.com/users/185856.json',
+    dataType: 'jsonp',
+    success: function(response) {
+	addCourses(response.courses.completed);
+    }
+  });
 
     function addCourses(courses) {
 	var $badges = $('#badges');
